@@ -2,6 +2,6 @@
 
 ## Link to task:
 
-[Personal Blog Website Project](https://review.udacity.com/#!/rubrics/2667/view)
+Udacity Project Requirements - [Personal Blog Website Project](https://review.udacity.com/#!/rubrics/2667/view)
 
-[Project URL](https://petya-.github.io/udacity-blog-website/blog/blogPost.html)
+Github Pages - [Project URL](https://petya-.github.io/udacity-blog-website/blog/blogPost.html)
