@@ -1,0 +1,237 @@
+/* Media Queries */
+@import url(smallScreenStyle.css) screen and (max-width: 599px);
+@import url(mediumScreenStyle.css) screen and (min-width: 600px) and
+  (max-width: 900px);
+@import url(largeScreenStyle.css) screen and (min-width: 901px) and
+  (max-width: 1250px);
+@import url(veryLargeScreenStyle.css) screen and (min-width: 1251px);
+
+/* Other Styles */
+@import url(blog.css);
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,400;1,700&family=Quicksand:wght@300&family=Source+Sans+Pro:wght@700&display=swap");
+
+/* Generic items */
+
+body {
+  margin: 0px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.main-button {
+  background-color: #f54336;
+  color: #fff;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.38);
+  height: 10%;
+  padding: 2% 3%;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 16px 48px 0 rgba(0, 0, 0, 0.38);
+  border-radius: 5px;
+  background-color: #b0fba5;
+  font-size: 1.5em;
+}
+
+.author-image {
+  /* fill the container, preserving aspect ratio, and cropping to fit */
+  background-size: cover;
+  /* center the image vertically and horizontally */
+  background-position: top center;
+  /* make a square container */
+  /* make it round */
+  border-radius: 50%;
+}
+
+/* Header */
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation-link {
+  text-decoration: none;
+}
+
+/* Content */
+
+#content {
+  display: grid;
+  grid-template-areas: "info" "blog";
+}
+
+.information {
+  background-image: url("http://images.ctfassets.net/hrltx12pl8hq/EpRPTEZnLaaS0OmsquKgM/4ca8ce0fe399a00214e9430d00e3fc7e/color-overlay-crushed.png");
+  background-color: #b2fba5;
+  grid-area: info;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding: 5%;
+}
+
+.authors {
+  grid-area: a;
+  font-size: 1.5em;
+  display: flex;
+}
+
+.authors-info {
+  grid-area: ai;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authors-info p {
+  font-size: 1em;
+  margin: 0;
+}
+
+.authors-info h2 {
+  font-size: 2.5em;
+}
+
+.author-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.author-name {
+  margin: 0;
+  font-size: 0.5em;
+}
+
+#image-one {
+  background-image: url("../img/author-1.jpg");
+}
+#image-two {
+  background-image: url("../img/author-2.jpg");
+}
+#image-three {
+  background-image: url("../img/author-3.jpg");
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter-card {
+  grid-area: nl;
+}
+
+.newsletter-text {
+  margin: 4% 0 4% 0;
+  font-size: 0.7em;
+}
+
+.label {
+  font-size: 0.5em;
+  margin-right: 2%;
+}
+
+.newsletter-email {
+  width: 75%;
+  border-radius: 5px;
+  padding: 0.5em;
+  border: 1px solid silver; /* <-- Override default border */
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* Articles */
+
+#articles {
+  grid-area: blog;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.articles-title {
+  font-size: 2em;
+  font-family: "Noto Serif", serif;
+  margin: 0.5% 0;
+}
+
+.articles-subtitle {
+  font-family: "Noto Serif", serif;
+  margin: 0.5% 0 1.5% 0;
+}
+
+.article-section {
+  background-color: #d9ffd3;
+  width: 100%;
+  display: flex;
+}
+
+.section-headline {
+  font-size: 1.5em;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.article-card {
+  flex-flow: row;
+  justify-content: space-evenly;
+  margin: 2%;
+}
+
+.article-image {
+  /* fill the container, preserving aspect ratio, and cropping to fit */
+  background-size: cover;
+  /* center the image vertically and horizontally */
+  background-position: top center;
+}
+
+.image-css-grid {
+  background-image: url("../img/css-grid.jpg");
+}
+
+.image-flexbox {
+  background-image: url("../img/flexbox-img.jpg");
+}
+
+.image-media-queries {
+  background-image: url("../img/media-queries.jpg");
+}
+
+.article-content {
+  text-align: start;
+}
+
+.article-headline {
+  font-size: 1em;
+  margin: 2%;
+}
+
+.article-creator {
+  font-size: 0.5em;
+  margin: 2%;
+}
+
+.article-description {
+  font-size: 0.7em;
+  margin: 2%;
+}
+
+.article-link {
+  text-decoration: none;
+  color: #f54336;
+}

@@ -1,0 +1,103 @@
+#article-container {
+  display: grid;
+}
+
+#article {
+  display: grid;
+  grid-template-areas: "hd hd" "blog info";
+}
+
+.article-header {
+  grid-area: hd;
+  background-image: url("http://images.ctfassets.net/hrltx12pl8hq/EpRPTEZnLaaS0OmsquKgM/4ca8ce0fe399a00214e9430d00e3fc7e/color-overlay-crushed.png");
+  background-color: #b2fba5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2%;
+}
+
+.title {
+  margin: 0;
+  font-size: 2em;
+  font-family: "Noto Serif", serif;
+  margin: 0.5% 0;
+}
+
+.author {
+  font-family: "Noto Serif", serif;
+  margin: 0.5% 0 0.5% 0;
+}
+
+.info {
+  font-family: "Noto Serif", serif;
+  font-size: 0.8em;
+  margin: 0.5% 0 1.5% 0;
+}
+
+#article-content {
+  grid-area: blog;
+  display: flex;
+}
+
+.author-info {
+  grid-area: info;
+  padding: 1%;
+  margin: 1%;
+}
+
+.author-info-card {
+  padding: 0;
+  margin: 4%;
+  height: 40vh;
+}
+
+.author-headline {
+  font-size: 1em;
+  margin: 0;
+}
+
+.author-title {
+  font-size: 0.7em;
+  margin-top: 0.5%;
+}
+
+.author-bio {
+  font-size: 0.6em;
+  margin: 4%;
+}
+
+.single-article-image {
+  background-size: cover;
+  background-position: top center;
+  margin: 4%;
+  height: 20em;
+}
+
+.image-caption {
+  margin-left: 4%;
+  font-size: 0.6em;
+}
+
+.article-text {
+  font-size: 1em;
+  margin: 2% 2% 0% 4%;
+  line-height: 1.3em;
+}
+
+#footer {
+  padding: 1%;
+}
+
+@media screen and (max-width: 599px) {
+  #article {
+    grid-template-areas: "hd" "blog" "info";
+    margin-top: 2%;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .author-info-card {
+    height: 50vh;
+  }
+}

@@ -1,0 +1,54 @@
+#container {
+  display: grid;
+  grid-template-rows: 2% 100% 1%;
+}
+
+#header {
+  font-size: 12px;
+}
+
+.header-title {
+  margin: 2% 2% 0 4%;
+}
+
+.menu-icons {
+  margin: 2% 4% 0 2%;
+  font-size: 1.7em;
+}
+
+.information {
+  grid-template-areas:
+    "ai"
+    "a" "nl";
+  grid-row-gap: 0.5%;
+}
+
+.authors {
+  width: 95%;
+  flex-direction: column;
+}
+
+.author-image {
+  width: 6.5em;
+  height: 6.5em;
+  margin: 0.5em;
+}
+
+.authors-info h2 {
+  margin: 1%;
+}
+
+.card {
+  margin-top: 1%;
+  padding: 4%;
+}
+
+.article-section {
+  flex-direction: column;
+  text-align: center;
+}
+
+.article-image {
+  width: 15em;
+  height: 5em;
+}

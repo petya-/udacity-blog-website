@@ -1,0 +1,53 @@
+#container {
+  display: grid;
+  grid-template-rows: 2% 97% 2%;
+}
+#header {
+  height: 100%;
+  font-size: 18px;
+}
+
+.header-title {
+  margin: 1%;
+}
+
+.menu-icons {
+  margin: 1%;
+  font-size: 1.4em;
+}
+
+.information {
+  grid-template-areas:
+    "ai ai"
+    "a nl";
+  grid-column-gap: 4%;
+}
+
+.authors {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.author-image {
+  width: 7em;
+  height: 7em;
+  margin: 0.5em 1em 0.5em 1em;
+}
+
+.card {
+  padding: 5%;
+}
+
+.article-section {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.article-image {
+  width: 16em;
+  height: 8em;
+}
+
+#footer {
+  align-items: center;
+}
