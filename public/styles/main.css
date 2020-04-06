@@ -69,7 +69,7 @@ body {
 }
 
 .information {
-  background-image: url("http://images.ctfassets.net/hrltx12pl8hq/EpRPTEZnLaaS0OmsquKgM/4ca8ce0fe399a00214e9430d00e3fc7e/color-overlay-crushed.png");
+  background-image: url("../img/headline-image.png");
   background-color: #b2fba5;
   grid-area: info;
   display: grid;

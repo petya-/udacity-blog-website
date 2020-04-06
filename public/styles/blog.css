@@ -40,6 +40,10 @@
   display: flex;
 }
 
+.quote {
+  text-decoration: underline;
+}
+
 .author-info {
   grid-area: info;
   padding: 1%;
